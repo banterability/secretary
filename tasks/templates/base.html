@@ -1,0 +1,31 @@
+{% load media %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Secretary for {{ day|date:"l, F j, Y"}}</title>
+	<link rel="shortcut icon" href="{% media 'favicon.ico' %}">
+	
+    <link rel="stylesheet" href="{% media 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% media 'css/style.css' %}">
+    
+    <script src="{% media 'js/jquery1.4.2.js' %}" type="text/javascript"></script>
+    <script src="{% media 'js/timeago.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+          $("abbr.timeago").timeago();
+        });
+    </script>
+</head>
+<body>
+    
+    <div id="container">
+        {% block content %}{% endblock %}
+    </div><!-- /container -->
+
+<!-- thanks for visiting! handcoded by jeffrey long (hello@banterability.com) -->
+
+</body>
+</html>

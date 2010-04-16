@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load dates %}
+
+{% block content %}
+
+{% if not next_day %}
+{% include "form.html" %}
+{% endif %}
+
+<ul id="task-list">
+{% for task in object_list %}
+    <li{% if forloop.first %} class="latest"{% endif %}>
+        {{ task.description }} 
+        <span class="task-time"> - 
+            {% timeago task.timestamp %}
+        </span>
+    </li>
+{% empty %}
+    <li>No tasks today</li>
+{% endfor %}
+</ul>
+
+<div id="date-navigation">
+{% if previous_day %}
+    <a href="/{{ previous_day|date:"Y/m/d" }}/">&laquo; {{ previous_day|date:"l (N j)" }}</a> <br />
+{% endif %}
+{% if next_day %}
+    <a href="/{{ next_day|date:"Y/m/d" }}/">{{ next_day|date:"l (N j)" }} &raquo;</a> <br />
+{% endif %}
+</div>
+
+{% endblock %}

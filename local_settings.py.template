@@ -1,0 +1,2 @@
+from environments.production import *
+# from environments.development import *

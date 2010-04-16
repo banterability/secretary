@@ -1,0 +1,86 @@
+/*
+    thanks for visiting! handcoded by jeffrey long (hello@banterability.com)
+    prior art:
+       - dan cederholm (http://handcraftedcss.com/)
+*/
+body{
+	background-color: rgb(242,242,242);
+	font-family: HelveticaNeue-Light, Helvetica, sans-serif;
+}
+
+div#container{
+	width: 350px;
+	overflow: hidden;
+}
+
+form#task-form{
+	background-color: rgb(88,129,166);
+	padding: 5px 0;
+}
+ul#task-list{
+	list-style: disc inside;
+	margin: 10px 0;
+	font-size:14px;
+}
+ul#task-list li{
+	color: rgba(89,53,40,.9);
+	padding: 5px 10px;
+}
+div#date-navigation{
+	background-color: rgb(166,116,73);
+	color: rgba(242,242,242,1);
+	padding: 8px 0px 10px 5px;
+	line-height: 8px;
+	font-size: 12px;
+}
+div#date-navigation a{
+	color: rgba(242,242,242,.7);
+	text-decoration: none;
+	text-transform:lowercase;
+}
+div#date-navigation a:hover{
+	color: rgba(242,242,242,.9);
+	text-decoration: underline;
+}
+li span.task-time{
+	color: rgba(89,53,40,.5);
+}
+form#task-form h1{
+	color: rgba(242,242,242,.5);
+	text-transform: lowercase;
+	font-size: 13px;
+	font-family: HelveticaNeue-Light, Helvetica, sans-serif;
+	padding: 4px;
+	display: inline;
+}
+
+form#task-form input#id_description{
+	width: 210px;
+	height: 25px;
+	overflow: hidden;
+	border: none;
+	font-size: 12px;
+	padding-left: 5px;
+	color: rgb(1,13,0);
+	background-color: rgba(242,242,242,0.95);
+}
+
+
+/* self-clear floats */
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*
+color palatte:
+rgb(88,129,166) //blue
+rgb(1,13,0) //black
+rgb(166,116,73) //tan
+rgb(89,53,40) //brown
+rgb(242,242,242) //white
+*/
