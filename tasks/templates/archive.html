@@ -11,9 +11,7 @@
 {% for task in object_list %}
     <li{% if forloop.first %} class="latest"{% endif %}>
         {{ task.description }} 
-        <span class="task-time"> - 
-            {% timeago task.timestamp %}
-        </span>
+        {% timeago task.timestamp %}
     </li>
 {% empty %}
     <li>No tasks today</li>

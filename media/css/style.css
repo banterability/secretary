@@ -20,7 +20,7 @@ form#task-form{
 ul#task-list{
 	list-style: disc inside;
 	margin: 10px 0;
-	font-size:14px;
+	font-size:13px;
 }
 ul#task-list li{
 	color: rgba(89,53,40,.9);
@@ -42,8 +42,10 @@ div#date-navigation a:hover{
 	color: rgba(242,242,242,.9);
 	text-decoration: underline;
 }
-li span.task-time{
+abbr.timeago{
 	color: rgba(89,53,40,.5);
+	font-size:11px;
+	padding-left:4px;
 }
 form#task-form h1{
 	color: rgba(242,242,242,.5);
