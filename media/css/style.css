@@ -9,7 +9,7 @@ body{
 }
 
 div#container{
-	width: 350px;
+	width: 400px;
 	overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ form#task-form{
 ul#task-list{
 	list-style: disc inside;
 	margin: 10px 0;
-	font-size:13px;
+	font-size:14px;
 }
 ul#task-list li{
 	color: rgba(89,53,40,.9);
@@ -44,7 +44,7 @@ div#date-navigation a:hover{
 }
 abbr.timeago{
 	color: rgba(89,53,40,.5);
-	font-size:11px;
+	font-size:12px;
 	padding-left:4px;
 }
 form#task-form h1{
@@ -57,7 +57,7 @@ form#task-form h1{
 }
 
 form#task-form input#id_description{
-	width: 210px;
+	width: 260px;
 	height: 25px;
 	overflow: hidden;
 	border: none;
